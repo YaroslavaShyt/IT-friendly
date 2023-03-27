@@ -800,21 +800,29 @@ footer .footer-content .bottom-adaptive {
   display: none;
 }
 
-.choose-course {
+.choose-course, .search-course {
   background: none;
   border-radius: 15px;
   border-color: #863558;
   padding: 5px 35px 5px 35px;
   font-family: "Jost";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 20px;
   color: #2D2A32;
   cursor: pointer;
+  transition: all 0.5s;
 }
-.choose-course:hover {
+.choose-course:hover, .search-course:hover {
   background: #863558;
   color: #ffffff;
+}
+
+.search-course {
+  color: #fff;
+  background-color: #863558;
+  padding: 5px 50px 5px 50px;
+  margin-bottom: 40px;
 }
 
 .team_slide_1 {
@@ -952,5 +960,611 @@ footer .footer-content .bottom-adaptive {
 @media (max-width: 767px) {
   .team_slide_2 {
     padding: 30px;
+  }
+}
+
+.courses_slide_1 {
+  background-image: url("/images/courses/courses-background.png");
+}
+.courses_slide_1 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.courses_slide_1 .container h1 {
+  color: #fff;
+  font-size: 70px;
+  margin-top: 100px;
+  font-weight: 700;
+  text-shadow: 4px 3px 0px #863558;
+  width: 350px;
+  text-align: center;
+}
+.courses_slide_1 .container .user-choose {
+  background-color: rgba(250, 253, 246, 0.85);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 100px auto;
+}
+.courses_slide_1 .container .user-choose .checkboxes input[type=checkbox] {
+  height: 20px;
+  width: 20px;
+  border: 5px solid #863558;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.courses_slide_1 .container .user-choose .filters {
+  margin-bottom: 10px;
+}
+.courses_slide_1 .container .user-choose .filters select {
+  background-color: #fff;
+  border: 2px solid #863558;
+  border-radius: 10px;
+  height: 50px;
+  width: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 10px;
+  font-size: 15px;
+  color: #5F6162;
+}
+@media (max-width: 560px) {
+  .courses_slide_1 .container h1 {
+    text-align: center;
+    font-size: 60px;
+  }
+}
+
+.courses_slide_2 {
+  display: block;
+}
+.courses_slide_2 .container {
+  display: flex;
+  padding: 30px;
+  flex-wrap: wrap;
+  margin: 30px auto;
+}
+@media (min-width: 1400px) {
+  .courses_slide_2 .container {
+    width: 1360px;
+  }
+}
+@media (max-width: 1399px) {
+  .courses_slide_2 .container {
+    width: 1170px;
+  }
+}
+@media (max-width: 1199px) {
+  .courses_slide_2 .container {
+    width: 940px;
+  }
+}
+@media (max-width: 991px) {
+  .courses_slide_2 .container {
+    width: 720px;
+  }
+}
+@media (max-width: 767px) {
+  .courses_slide_2 .container {
+    width: 100%;
+  }
+}
+.courses_slide_2 .container .course-card {
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  width: calc(33.33% - 20px);
+  padding: 50px;
+  margin: 10px;
+}
+@media (max-width: 991px) {
+  .courses_slide_2 .container .course-card {
+    width: calc(50% - 20px);
+    padding: 30px;
+  }
+}
+@media (max-width: 650px) {
+  .courses_slide_2 .container .course-card .choose-course {
+    font-size: 15px;
+  }
+}
+@media (max-width: 560px) {
+  .courses_slide_2 .container .course-card {
+    width: 100%;
+  }
+  .courses_slide_2 .container .course-card .choose-course {
+    font-size: 20px;
+  }
+}
+@media (max-width: 350px) {
+  .courses_slide_2 .container .course-card .choose-course {
+    font-size: 10px;
+  }
+}
+.courses_slide_2 .container .course-card .name {
+  font-size: 28px;
+  margin: 10px 0px 5px 0px;
+}
+.courses_slide_2 .container .course-card p {
+  font-size: 24px;
+  margin: 0px 0px 15px 0;
+}
+.courses_slide_2 .container .course-card img {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+.courses_slide_2 .container .course-card .choose-course {
+  margin: 0 auto;
+}
+@media (max-width: 1199px) {
+  .courses_slide_2 .container .course-card .name {
+    font-size: 25px;
+  }
+  .courses_slide_2 .container .course-card p {
+    font-size: 23px;
+  }
+}
+@media (max-width: 990px) {
+  .courses_slide_2 .container .course-card .name {
+    font-size: 23px;
+  }
+  .courses_slide_2 .container .course-card p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .courses_slide_2 {
+    padding: 30px;
+  }
+}
+
+.register .container, .login .container, .askquestion .container,
+.thankforquestion .container, .faq .container, .thankforbuying .container,
+.buycourse .container, .usercourses .container, .courseinfo .container {
+  background-color: rgba(98, 190, 193, 0.81);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.register .container .sign-up, .register .container .log-in, .register .container .ask-question,
+.register .container .thank-for-question, .register .container .questions,
+.register .container .thank-for-buying, .register .container .buy-course,
+.register .container .user-courses, .register .container .course-info, .login .container .sign-up, .login .container .log-in, .login .container .ask-question,
+.login .container .thank-for-question, .login .container .questions,
+.login .container .thank-for-buying, .login .container .buy-course,
+.login .container .user-courses, .login .container .course-info, .askquestion .container .sign-up, .askquestion .container .log-in, .askquestion .container .ask-question,
+.askquestion .container .thank-for-question, .askquestion .container .questions,
+.askquestion .container .thank-for-buying, .askquestion .container .buy-course,
+.askquestion .container .user-courses, .askquestion .container .course-info,
+.thankforquestion .container .sign-up,
+.thankforquestion .container .log-in,
+.thankforquestion .container .ask-question,
+.thankforquestion .container .thank-for-question,
+.thankforquestion .container .questions,
+.thankforquestion .container .thank-for-buying,
+.thankforquestion .container .buy-course,
+.thankforquestion .container .user-courses,
+.thankforquestion .container .course-info, .faq .container .sign-up, .faq .container .log-in, .faq .container .ask-question,
+.faq .container .thank-for-question, .faq .container .questions,
+.faq .container .thank-for-buying, .faq .container .buy-course,
+.faq .container .user-courses, .faq .container .course-info, .thankforbuying .container .sign-up, .thankforbuying .container .log-in, .thankforbuying .container .ask-question,
+.thankforbuying .container .thank-for-question, .thankforbuying .container .questions,
+.thankforbuying .container .thank-for-buying, .thankforbuying .container .buy-course,
+.thankforbuying .container .user-courses, .thankforbuying .container .course-info,
+.buycourse .container .sign-up,
+.buycourse .container .log-in,
+.buycourse .container .ask-question,
+.buycourse .container .thank-for-question,
+.buycourse .container .questions,
+.buycourse .container .thank-for-buying,
+.buycourse .container .buy-course,
+.buycourse .container .user-courses,
+.buycourse .container .course-info, .usercourses .container .sign-up, .usercourses .container .log-in, .usercourses .container .ask-question,
+.usercourses .container .thank-for-question, .usercourses .container .questions,
+.usercourses .container .thank-for-buying, .usercourses .container .buy-course,
+.usercourses .container .user-courses, .usercourses .container .course-info, .courseinfo .container .sign-up, .courseinfo .container .log-in, .courseinfo .container .ask-question,
+.courseinfo .container .thank-for-question, .courseinfo .container .questions,
+.courseinfo .container .thank-for-buying, .courseinfo .container .buy-course,
+.courseinfo .container .user-courses, .courseinfo .container .course-info {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+  width: 400px;
+}
+@media (max-width: 559px) {
+  .register .container .sign-up, .register .container .log-in, .register .container .ask-question,
+  .register .container .thank-for-question, .register .container .questions,
+  .register .container .thank-for-buying, .register .container .buy-course,
+  .register .container .user-courses, .register .container .course-info, .login .container .sign-up, .login .container .log-in, .login .container .ask-question,
+  .login .container .thank-for-question, .login .container .questions,
+  .login .container .thank-for-buying, .login .container .buy-course,
+  .login .container .user-courses, .login .container .course-info, .askquestion .container .sign-up, .askquestion .container .log-in, .askquestion .container .ask-question,
+  .askquestion .container .thank-for-question, .askquestion .container .questions,
+  .askquestion .container .thank-for-buying, .askquestion .container .buy-course,
+  .askquestion .container .user-courses, .askquestion .container .course-info,
+  .thankforquestion .container .sign-up,
+  .thankforquestion .container .log-in,
+  .thankforquestion .container .ask-question,
+  .thankforquestion .container .thank-for-question,
+  .thankforquestion .container .questions,
+  .thankforquestion .container .thank-for-buying,
+  .thankforquestion .container .buy-course,
+  .thankforquestion .container .user-courses,
+  .thankforquestion .container .course-info, .faq .container .sign-up, .faq .container .log-in, .faq .container .ask-question,
+  .faq .container .thank-for-question, .faq .container .questions,
+  .faq .container .thank-for-buying, .faq .container .buy-course,
+  .faq .container .user-courses, .faq .container .course-info, .thankforbuying .container .sign-up, .thankforbuying .container .log-in, .thankforbuying .container .ask-question,
+  .thankforbuying .container .thank-for-question, .thankforbuying .container .questions,
+  .thankforbuying .container .thank-for-buying, .thankforbuying .container .buy-course,
+  .thankforbuying .container .user-courses, .thankforbuying .container .course-info,
+  .buycourse .container .sign-up,
+  .buycourse .container .log-in,
+  .buycourse .container .ask-question,
+  .buycourse .container .thank-for-question,
+  .buycourse .container .questions,
+  .buycourse .container .thank-for-buying,
+  .buycourse .container .buy-course,
+  .buycourse .container .user-courses,
+  .buycourse .container .course-info, .usercourses .container .sign-up, .usercourses .container .log-in, .usercourses .container .ask-question,
+  .usercourses .container .thank-for-question, .usercourses .container .questions,
+  .usercourses .container .thank-for-buying, .usercourses .container .buy-course,
+  .usercourses .container .user-courses, .usercourses .container .course-info, .courseinfo .container .sign-up, .courseinfo .container .log-in, .courseinfo .container .ask-question,
+  .courseinfo .container .thank-for-question, .courseinfo .container .questions,
+  .courseinfo .container .thank-for-buying, .courseinfo .container .buy-course,
+  .courseinfo .container .user-courses, .courseinfo .container .course-info {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding-top: 100px;
+  }
+}
+.register .container .sign-up a, .register .container .log-in a, .register .container .ask-question a,
+.register .container .thank-for-question a, .register .container .questions a,
+.register .container .thank-for-buying a, .register .container .buy-course a,
+.register .container .user-courses a, .register .container .course-info a, .login .container .sign-up a, .login .container .log-in a, .login .container .ask-question a,
+.login .container .thank-for-question a, .login .container .questions a,
+.login .container .thank-for-buying a, .login .container .buy-course a,
+.login .container .user-courses a, .login .container .course-info a, .askquestion .container .sign-up a, .askquestion .container .log-in a, .askquestion .container .ask-question a,
+.askquestion .container .thank-for-question a, .askquestion .container .questions a,
+.askquestion .container .thank-for-buying a, .askquestion .container .buy-course a,
+.askquestion .container .user-courses a, .askquestion .container .course-info a,
+.thankforquestion .container .sign-up a,
+.thankforquestion .container .log-in a,
+.thankforquestion .container .ask-question a,
+.thankforquestion .container .thank-for-question a,
+.thankforquestion .container .questions a,
+.thankforquestion .container .thank-for-buying a,
+.thankforquestion .container .buy-course a,
+.thankforquestion .container .user-courses a,
+.thankforquestion .container .course-info a, .faq .container .sign-up a, .faq .container .log-in a, .faq .container .ask-question a,
+.faq .container .thank-for-question a, .faq .container .questions a,
+.faq .container .thank-for-buying a, .faq .container .buy-course a,
+.faq .container .user-courses a, .faq .container .course-info a, .thankforbuying .container .sign-up a, .thankforbuying .container .log-in a, .thankforbuying .container .ask-question a,
+.thankforbuying .container .thank-for-question a, .thankforbuying .container .questions a,
+.thankforbuying .container .thank-for-buying a, .thankforbuying .container .buy-course a,
+.thankforbuying .container .user-courses a, .thankforbuying .container .course-info a,
+.buycourse .container .sign-up a,
+.buycourse .container .log-in a,
+.buycourse .container .ask-question a,
+.buycourse .container .thank-for-question a,
+.buycourse .container .questions a,
+.buycourse .container .thank-for-buying a,
+.buycourse .container .buy-course a,
+.buycourse .container .user-courses a,
+.buycourse .container .course-info a, .usercourses .container .sign-up a, .usercourses .container .log-in a, .usercourses .container .ask-question a,
+.usercourses .container .thank-for-question a, .usercourses .container .questions a,
+.usercourses .container .thank-for-buying a, .usercourses .container .buy-course a,
+.usercourses .container .user-courses a, .usercourses .container .course-info a, .courseinfo .container .sign-up a, .courseinfo .container .log-in a, .courseinfo .container .ask-question a,
+.courseinfo .container .thank-for-question a, .courseinfo .container .questions a,
+.courseinfo .container .thank-for-buying a, .courseinfo .container .buy-course a,
+.courseinfo .container .user-courses a, .courseinfo .container .course-info a {
+  display: block;
+  margin-top: 5px;
+  text-decoration: none;
+  color: black;
+}
+.register .container .sign-up .close-button, .register .container .log-in .close-button, .register .container .ask-question .close-button,
+.register .container .thank-for-question .close-button, .register .container .questions .close-button,
+.register .container .thank-for-buying .close-button, .register .container .buy-course .close-button,
+.register .container .user-courses .close-button, .register .container .course-info .close-button, .login .container .sign-up .close-button, .login .container .log-in .close-button, .login .container .ask-question .close-button,
+.login .container .thank-for-question .close-button, .login .container .questions .close-button,
+.login .container .thank-for-buying .close-button, .login .container .buy-course .close-button,
+.login .container .user-courses .close-button, .login .container .course-info .close-button, .askquestion .container .sign-up .close-button, .askquestion .container .log-in .close-button, .askquestion .container .ask-question .close-button,
+.askquestion .container .thank-for-question .close-button, .askquestion .container .questions .close-button,
+.askquestion .container .thank-for-buying .close-button, .askquestion .container .buy-course .close-button,
+.askquestion .container .user-courses .close-button, .askquestion .container .course-info .close-button,
+.thankforquestion .container .sign-up .close-button,
+.thankforquestion .container .log-in .close-button,
+.thankforquestion .container .ask-question .close-button,
+.thankforquestion .container .thank-for-question .close-button,
+.thankforquestion .container .questions .close-button,
+.thankforquestion .container .thank-for-buying .close-button,
+.thankforquestion .container .buy-course .close-button,
+.thankforquestion .container .user-courses .close-button,
+.thankforquestion .container .course-info .close-button, .faq .container .sign-up .close-button, .faq .container .log-in .close-button, .faq .container .ask-question .close-button,
+.faq .container .thank-for-question .close-button, .faq .container .questions .close-button,
+.faq .container .thank-for-buying .close-button, .faq .container .buy-course .close-button,
+.faq .container .user-courses .close-button, .faq .container .course-info .close-button, .thankforbuying .container .sign-up .close-button, .thankforbuying .container .log-in .close-button, .thankforbuying .container .ask-question .close-button,
+.thankforbuying .container .thank-for-question .close-button, .thankforbuying .container .questions .close-button,
+.thankforbuying .container .thank-for-buying .close-button, .thankforbuying .container .buy-course .close-button,
+.thankforbuying .container .user-courses .close-button, .thankforbuying .container .course-info .close-button,
+.buycourse .container .sign-up .close-button,
+.buycourse .container .log-in .close-button,
+.buycourse .container .ask-question .close-button,
+.buycourse .container .thank-for-question .close-button,
+.buycourse .container .questions .close-button,
+.buycourse .container .thank-for-buying .close-button,
+.buycourse .container .buy-course .close-button,
+.buycourse .container .user-courses .close-button,
+.buycourse .container .course-info .close-button, .usercourses .container .sign-up .close-button, .usercourses .container .log-in .close-button, .usercourses .container .ask-question .close-button,
+.usercourses .container .thank-for-question .close-button, .usercourses .container .questions .close-button,
+.usercourses .container .thank-for-buying .close-button, .usercourses .container .buy-course .close-button,
+.usercourses .container .user-courses .close-button, .usercourses .container .course-info .close-button, .courseinfo .container .sign-up .close-button, .courseinfo .container .log-in .close-button, .courseinfo .container .ask-question .close-button,
+.courseinfo .container .thank-for-question .close-button, .courseinfo .container .questions .close-button,
+.courseinfo .container .thank-for-buying .close-button, .courseinfo .container .buy-course .close-button,
+.courseinfo .container .user-courses .close-button, .courseinfo .container .course-info .close-button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.register .container .sign-up h2, .register .container .log-in h2, .register .container .ask-question h2,
+.register .container .thank-for-question h2, .register .container .questions h2,
+.register .container .thank-for-buying h2, .register .container .buy-course h2,
+.register .container .user-courses h2, .register .container .course-info h2, .login .container .sign-up h2, .login .container .log-in h2, .login .container .ask-question h2,
+.login .container .thank-for-question h2, .login .container .questions h2,
+.login .container .thank-for-buying h2, .login .container .buy-course h2,
+.login .container .user-courses h2, .login .container .course-info h2, .askquestion .container .sign-up h2, .askquestion .container .log-in h2, .askquestion .container .ask-question h2,
+.askquestion .container .thank-for-question h2, .askquestion .container .questions h2,
+.askquestion .container .thank-for-buying h2, .askquestion .container .buy-course h2,
+.askquestion .container .user-courses h2, .askquestion .container .course-info h2,
+.thankforquestion .container .sign-up h2,
+.thankforquestion .container .log-in h2,
+.thankforquestion .container .ask-question h2,
+.thankforquestion .container .thank-for-question h2,
+.thankforquestion .container .questions h2,
+.thankforquestion .container .thank-for-buying h2,
+.thankforquestion .container .buy-course h2,
+.thankforquestion .container .user-courses h2,
+.thankforquestion .container .course-info h2, .faq .container .sign-up h2, .faq .container .log-in h2, .faq .container .ask-question h2,
+.faq .container .thank-for-question h2, .faq .container .questions h2,
+.faq .container .thank-for-buying h2, .faq .container .buy-course h2,
+.faq .container .user-courses h2, .faq .container .course-info h2, .thankforbuying .container .sign-up h2, .thankforbuying .container .log-in h2, .thankforbuying .container .ask-question h2,
+.thankforbuying .container .thank-for-question h2, .thankforbuying .container .questions h2,
+.thankforbuying .container .thank-for-buying h2, .thankforbuying .container .buy-course h2,
+.thankforbuying .container .user-courses h2, .thankforbuying .container .course-info h2,
+.buycourse .container .sign-up h2,
+.buycourse .container .log-in h2,
+.buycourse .container .ask-question h2,
+.buycourse .container .thank-for-question h2,
+.buycourse .container .questions h2,
+.buycourse .container .thank-for-buying h2,
+.buycourse .container .buy-course h2,
+.buycourse .container .user-courses h2,
+.buycourse .container .course-info h2, .usercourses .container .sign-up h2, .usercourses .container .log-in h2, .usercourses .container .ask-question h2,
+.usercourses .container .thank-for-question h2, .usercourses .container .questions h2,
+.usercourses .container .thank-for-buying h2, .usercourses .container .buy-course h2,
+.usercourses .container .user-courses h2, .usercourses .container .course-info h2, .courseinfo .container .sign-up h2, .courseinfo .container .log-in h2, .courseinfo .container .ask-question h2,
+.courseinfo .container .thank-for-question h2, .courseinfo .container .questions h2,
+.courseinfo .container .thank-for-buying h2, .courseinfo .container .buy-course h2,
+.courseinfo .container .user-courses h2, .courseinfo .container .course-info h2 {
+  margin-top: 0;
+  font-size: 30px;
+}
+.register .container .sign-up form label, .register .container .log-in form label, .register .container .ask-question form label,
+.register .container .thank-for-question form label, .register .container .questions form label,
+.register .container .thank-for-buying form label, .register .container .buy-course form label,
+.register .container .user-courses form label, .register .container .course-info form label, .login .container .sign-up form label, .login .container .log-in form label, .login .container .ask-question form label,
+.login .container .thank-for-question form label, .login .container .questions form label,
+.login .container .thank-for-buying form label, .login .container .buy-course form label,
+.login .container .user-courses form label, .login .container .course-info form label, .askquestion .container .sign-up form label, .askquestion .container .log-in form label, .askquestion .container .ask-question form label,
+.askquestion .container .thank-for-question form label, .askquestion .container .questions form label,
+.askquestion .container .thank-for-buying form label, .askquestion .container .buy-course form label,
+.askquestion .container .user-courses form label, .askquestion .container .course-info form label,
+.thankforquestion .container .sign-up form label,
+.thankforquestion .container .log-in form label,
+.thankforquestion .container .ask-question form label,
+.thankforquestion .container .thank-for-question form label,
+.thankforquestion .container .questions form label,
+.thankforquestion .container .thank-for-buying form label,
+.thankforquestion .container .buy-course form label,
+.thankforquestion .container .user-courses form label,
+.thankforquestion .container .course-info form label, .faq .container .sign-up form label, .faq .container .log-in form label, .faq .container .ask-question form label,
+.faq .container .thank-for-question form label, .faq .container .questions form label,
+.faq .container .thank-for-buying form label, .faq .container .buy-course form label,
+.faq .container .user-courses form label, .faq .container .course-info form label, .thankforbuying .container .sign-up form label, .thankforbuying .container .log-in form label, .thankforbuying .container .ask-question form label,
+.thankforbuying .container .thank-for-question form label, .thankforbuying .container .questions form label,
+.thankforbuying .container .thank-for-buying form label, .thankforbuying .container .buy-course form label,
+.thankforbuying .container .user-courses form label, .thankforbuying .container .course-info form label,
+.buycourse .container .sign-up form label,
+.buycourse .container .log-in form label,
+.buycourse .container .ask-question form label,
+.buycourse .container .thank-for-question form label,
+.buycourse .container .questions form label,
+.buycourse .container .thank-for-buying form label,
+.buycourse .container .buy-course form label,
+.buycourse .container .user-courses form label,
+.buycourse .container .course-info form label, .usercourses .container .sign-up form label, .usercourses .container .log-in form label, .usercourses .container .ask-question form label,
+.usercourses .container .thank-for-question form label, .usercourses .container .questions form label,
+.usercourses .container .thank-for-buying form label, .usercourses .container .buy-course form label,
+.usercourses .container .user-courses form label, .usercourses .container .course-info form label, .courseinfo .container .sign-up form label, .courseinfo .container .log-in form label, .courseinfo .container .ask-question form label,
+.courseinfo .container .thank-for-question form label, .courseinfo .container .questions form label,
+.courseinfo .container .thank-for-buying form label, .courseinfo .container .buy-course form label,
+.courseinfo .container .user-courses form label, .courseinfo .container .course-info form label {
+  text-align: left;
+  display: block;
+}
+.register .container .sign-up form .form-field, .register .container .log-in form .form-field, .register .container .ask-question form .form-field,
+.register .container .thank-for-question form .form-field, .register .container .questions form .form-field,
+.register .container .thank-for-buying form .form-field, .register .container .buy-course form .form-field,
+.register .container .user-courses form .form-field, .register .container .course-info form .form-field, .login .container .sign-up form .form-field, .login .container .log-in form .form-field, .login .container .ask-question form .form-field,
+.login .container .thank-for-question form .form-field, .login .container .questions form .form-field,
+.login .container .thank-for-buying form .form-field, .login .container .buy-course form .form-field,
+.login .container .user-courses form .form-field, .login .container .course-info form .form-field, .askquestion .container .sign-up form .form-field, .askquestion .container .log-in form .form-field, .askquestion .container .ask-question form .form-field,
+.askquestion .container .thank-for-question form .form-field, .askquestion .container .questions form .form-field,
+.askquestion .container .thank-for-buying form .form-field, .askquestion .container .buy-course form .form-field,
+.askquestion .container .user-courses form .form-field, .askquestion .container .course-info form .form-field,
+.thankforquestion .container .sign-up form .form-field,
+.thankforquestion .container .log-in form .form-field,
+.thankforquestion .container .ask-question form .form-field,
+.thankforquestion .container .thank-for-question form .form-field,
+.thankforquestion .container .questions form .form-field,
+.thankforquestion .container .thank-for-buying form .form-field,
+.thankforquestion .container .buy-course form .form-field,
+.thankforquestion .container .user-courses form .form-field,
+.thankforquestion .container .course-info form .form-field, .faq .container .sign-up form .form-field, .faq .container .log-in form .form-field, .faq .container .ask-question form .form-field,
+.faq .container .thank-for-question form .form-field, .faq .container .questions form .form-field,
+.faq .container .thank-for-buying form .form-field, .faq .container .buy-course form .form-field,
+.faq .container .user-courses form .form-field, .faq .container .course-info form .form-field, .thankforbuying .container .sign-up form .form-field, .thankforbuying .container .log-in form .form-field, .thankforbuying .container .ask-question form .form-field,
+.thankforbuying .container .thank-for-question form .form-field, .thankforbuying .container .questions form .form-field,
+.thankforbuying .container .thank-for-buying form .form-field, .thankforbuying .container .buy-course form .form-field,
+.thankforbuying .container .user-courses form .form-field, .thankforbuying .container .course-info form .form-field,
+.buycourse .container .sign-up form .form-field,
+.buycourse .container .log-in form .form-field,
+.buycourse .container .ask-question form .form-field,
+.buycourse .container .thank-for-question form .form-field,
+.buycourse .container .questions form .form-field,
+.buycourse .container .thank-for-buying form .form-field,
+.buycourse .container .buy-course form .form-field,
+.buycourse .container .user-courses form .form-field,
+.buycourse .container .course-info form .form-field, .usercourses .container .sign-up form .form-field, .usercourses .container .log-in form .form-field, .usercourses .container .ask-question form .form-field,
+.usercourses .container .thank-for-question form .form-field, .usercourses .container .questions form .form-field,
+.usercourses .container .thank-for-buying form .form-field, .usercourses .container .buy-course form .form-field,
+.usercourses .container .user-courses form .form-field, .usercourses .container .course-info form .form-field, .courseinfo .container .sign-up form .form-field, .courseinfo .container .log-in form .form-field, .courseinfo .container .ask-question form .form-field,
+.courseinfo .container .thank-for-question form .form-field, .courseinfo .container .questions form .form-field,
+.courseinfo .container .thank-for-buying form .form-field, .courseinfo .container .buy-course form .form-field,
+.courseinfo .container .user-courses form .form-field, .courseinfo .container .course-info form .form-field {
+  text-align: left;
+  display: flex;
+  height: 40px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 20px;
+  border-width: 1px;
+  padding-left: 5px;
+}
+
+.askquestion .container {
+  background-color: transparent;
+}
+.askquestion .container .ask-question {
+  text-align: left;
+  width: 500px;
+}
+.askquestion .container .ask-question select {
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 10px;
+  height: 45px;
+  width: 200px;
+  padding-left: 10px;
+  font-size: 15px;
+  color: #5F6162;
+  margin-bottom: 20px;
+}
+.askquestion .container .ask-question textarea {
+  width: 100%;
+}
+.askquestion .container .ask-question .choose-course {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+@media (max-width: 559px) {
+  .askquestion .container .ask-question {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding-top: 100px;
+  }
+}
+
+.thankforquestion .container .thank-for-question, .thankforquestion .container .thank-for-buying, .thankforbuying .container .thank-for-question, .thankforbuying .container .thank-for-buying, .usercourses .container .thank-for-question, .usercourses .container .thank-for-buying, .courseinfo .container .thank-for-question, .courseinfo .container .thank-for-buying {
+  width: 550px;
+}
+.thankforquestion .container .thank-for-question h2, .thankforquestion .container .thank-for-buying h2, .thankforbuying .container .thank-for-question h2, .thankforbuying .container .thank-for-buying h2, .usercourses .container .thank-for-question h2, .usercourses .container .thank-for-buying h2, .courseinfo .container .thank-for-question h2, .courseinfo .container .thank-for-buying h2 {
+  margin: 0;
+}
+
+.faq .container .questions {
+  width: 500px;
+  text-align: left;
+}
+@media (max-width: 559px) {
+  .faq .container .questions {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding-top: 100px;
+  }
+}
+
+.buycourse .container .buy-course .row {
+  display: flex;
+  justify-content: space-between;
+}
+.buycourse .container .buy-course .row .col {
+  margin-right: 15px;
+}
+
+.usercourses .container .user-courses .account {
+  display: flex;
+}
+.usercourses .container .user-courses .account div {
+  text-align: left;
+  margin-right: 30px;
+}
+.usercourses .container .user-courses .account div h3 {
+  margin-bottom: 0;
+}
+.usercourses .container .user-courses .account div img {
+  padding-top: 10px;
+  height: 80px;
+}
+
+.courseinfo .container .course-info {
+  width: 930px;
+}
+.courseinfo .container .course-info .info {
+  text-align: left;
+}
+.courseinfo .container .course-info .info .description {
+  display: flex;
+}
+.courseinfo .container .course-info .info .description .title {
+  display: flex;
+}
+.courseinfo .container .course-info .info .description .title h3 {
+  margin: 0 10px;
+  font-size: 25px;
+}
+.courseinfo .container .course-info .info p {
+  margin-top: 4px;
+  font-size: 20px;
+}
+.courseinfo .container .course-info .choose-course {
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 931px) {
+  .courseinfo .container .course-info {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding-top: 100px;
+  }
+}
+@media (max-width: 560px) {
+  .courseinfo .container .course-info .image {
+    display: none;
   }
 }
