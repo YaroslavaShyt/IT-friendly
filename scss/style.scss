@@ -289,7 +289,7 @@ body{
             text-align: center;
             background-color: $transparent-white;
             height: fit-content;
-            margin: 50px 0px 0px 20px;
+            margin: 50px 5% 0px 20px;
             width: 30%;
             border-radius: 40px;
             padding: 20px 30px 20px 30px;
@@ -302,6 +302,9 @@ body{
                 p{
                   font-size: 1rem;
                 }            
+            }
+            @media(max-width: 1200px){
+              margin-left: 0;
             }
             @media(max-width: 991px){
               margin: 50px auto;         
