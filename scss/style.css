@@ -1208,6 +1208,14 @@ footer .footer-content .bottom-adaptive {
   margin-left: 20px;
   margin-right: 20px;
 }
+@media (max-width: 560px) {
+  .courses_slide_1 .container .user-choose .checkboxes {
+    text-align: left;
+  }
+  .courses_slide_1 .container .user-choose .checkboxes label {
+    display: inline-block;
+  }
+}
 .courses_slide_1 .container .user-choose .filters {
   margin-bottom: 10px;
 }

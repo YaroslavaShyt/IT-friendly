@@ -306,7 +306,7 @@ body .slide_1 .info-list {
   background-color: rgba(250, 253, 246, 0.85);
   height: -moz-fit-content;
   height: fit-content;
-  margin: 50px 0px 0px 20px;
+  margin: 50px 5% 0px 20px;
   width: 30%;
   border-radius: 40px;
   padding: 20px 30px 20px 30px;
@@ -320,6 +320,11 @@ body .slide_1 .info-list li {
 }
 body .slide_1 .info-list li p {
   font-size: 1rem;
+}
+@media (max-width: 1200px) {
+  body .slide_1 .info-list {
+    margin-left: 0;
+  }
 }
 @media (max-width: 991px) {
   body .slide_1 .info-list {
@@ -1202,6 +1207,14 @@ footer .footer-content .bottom-adaptive {
   border: 5px solid #863558;
   margin-left: 20px;
   margin-right: 20px;
+}
+@media (max-width: 560px) {
+  .courses_slide_1 .container .user-choose .checkboxes {
+    text-align: left;
+  }
+  .courses_slide_1 .container .user-choose .checkboxes label {
+    display: inline-block;
+  }
 }
 .courses_slide_1 .container .user-choose .filters {
   margin-bottom: 10px;

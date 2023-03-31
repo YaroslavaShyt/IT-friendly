@@ -1138,7 +1138,13 @@ footer{
           width: 20px;
           border: 5px solid $crimson;
           margin-left: 20px;
-          margin-right: 20px;
+          margin-right: 20px;       
+        }
+        @media (max-width: 560px){
+          text-align: left;
+          label{
+            display: inline-block; 
+          }         
         }
       }
       .filters{
