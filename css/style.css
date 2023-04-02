@@ -180,7 +180,7 @@ body .slide_1 {
 body .slide_1 .container {
   display: flex;
   justify-content: space-between;
-  margin: 50px auto;
+  margin: 30px auto 50px auto;
   background-image: url("../images/main-blob.png");
   background-size: 70% 100%;
   background-repeat: no-repeat;
@@ -206,7 +206,8 @@ body .slide_1 .container {
   body .slide_1 .container {
     width: 740px;
     margin-top: 10px;
-    background-size: 100% 90%;
+    background-size: 100% 60%;
+    height: auto;
     background-position: center top;
     flex-direction: column;
   }
@@ -214,14 +215,18 @@ body .slide_1 .container {
 @media (max-width: 767px) {
   body .slide_1 .container {
     width: 90%;
-    background-size: 100% 70%;
+    background-size: 100% 40%;
   }
 }
 @media (max-width: 560px) {
   body .slide_1 .container {
-    height: 350px;
-    background-size: 100% 80%;
+    background-size: 100% 40%;
     margin-top: 30px;
+  }
+}
+@media (max-width: 350px) {
+  body .slide_1 .container {
+    background-size: 100% 30%;
   }
 }
 body .slide_1 .info {
@@ -409,7 +414,6 @@ body .slide_1 .info-list li p {
 @media (max-width: 1200px) {
   .slide_2 .container-slider {
     flex-direction: column-reverse;
-    margin-top: 500px;
   }
   .slide_2 .container-slider .photo {
     width: 100%;
@@ -846,6 +850,11 @@ body .slide_1 .info-list li p {
     margin-left: 0;
   }
 }
+@media (max-width: 400px) {
+  .slide_5 .container .change-future .text p {
+    margin: 0;
+  }
+}
 @media (max-width: 670px) {
   .slide_5 .container .change-future .text {
     width: -moz-fit-content;
@@ -858,6 +867,15 @@ body .slide_1 .info-list li p {
   }
   .slide_5 .container .change-future .text p {
     font-size: 30px;
+  }
+}
+@media (max-width: 350px) {
+  .slide_5 .container .change-future .text {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .slide_5 .container .change-future .text p {
+    font-size: 20px;
   }
 }
 .slide_5 .container .change-future .image {
@@ -913,6 +931,11 @@ body .slide_1 .info-list li p {
   display: flex;
   padding: 0px 20px 20px 0px;
 }
+@media (max-width: 400px) {
+  .slide_5 .container .ask-question .text {
+    width: auto;
+  }
+}
 .slide_5 .container .ask-question p {
   margin: 0px;
 }
@@ -937,6 +960,11 @@ body .slide_1 .info-list li p {
 }
 .slide_5 .container .read-question .text #lower-p {
   margin-bottom: 20px;
+}
+@media (max-width: 400px) {
+  .slide_5 .container .read-question button {
+    margin-left: 15px;
+  }
 }
 
 footer {
@@ -1752,9 +1780,16 @@ footer .footer-content .bottom-adaptive {
 @media (max-width: 559px) {
   .askquestion .container .ask-question {
     width: 100%;
-    height: 100%;
     border-radius: 0;
     padding-top: 100px;
+  }
+  .askquestion .container .ask-question h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 559px) {
+  .askquestion .container {
+    width: 100%;
   }
 }
 

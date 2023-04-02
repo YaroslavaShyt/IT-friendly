@@ -189,7 +189,7 @@ body{
         .container{
             display: flex;
             justify-content: space-between;
-            margin: 50px auto;
+            margin: 30px auto 50px auto;
             background-image: url('../images/main-blob.png');
             background-size: 70% 100%;
             background-repeat: no-repeat;
@@ -207,19 +207,21 @@ body{
             @media(max-width: 991px){
               width: 740px;
               margin-top: 10px;
-              background-size: 100% 90%;
-             
+              background-size: 100% 60%;
+              height: auto;
               background-position: center top;
               flex-direction: column;
             }
             @media (max-width: 767px) {
               width: 90%;
-              background-size: 100% 70%;
+              background-size: 100% 40%;
             } 
             @media (max-width: 560px) {
-              height: 350px;
-              background-size: 100% 80%;
+              background-size: 100% 40%;
               margin-top: 30px;
+            }   
+            @media (max-width: 350px){
+              background-size: 100% 30%;
             }
         }
         
@@ -387,7 +389,6 @@ body{
     }
     @media (max-width: 1200px){
       flex-direction: column-reverse;
-      margin-top: 500px;
       .photo{
         width: 100%;
         height: 780px;
@@ -804,6 +805,11 @@ body{
           margin-left: 0;
         }
       }
+      @media(max-width: 400px){
+        p{
+          margin: 0;
+        }
+      }
       @media(max-width: 670px){
         width: fit-content;
       }
@@ -811,6 +817,12 @@ body{
         width: 300px;
         p{
           font-size: 30px;
+        }
+      }
+      @media (max-width: 350px){
+        width: fit-content;
+        p{
+          font-size: 20px;
         }
       }
     }
@@ -856,6 +868,9 @@ body{
       width: 350px;
       display: flex;
       padding: 0px 20px 20px 0px;
+      @media (max-width: 400px) {
+        width: auto;
+      }
     }
     p{
       margin: 0px;
@@ -867,7 +882,7 @@ body{
     }
     button{
       margin-left: 15px;
-    }    
+    }  
   }
   .read-question{
     .text{
@@ -882,6 +897,11 @@ body{
       }
       #lower-p{
         margin-bottom: 20px;
+      }
+    }
+    @media (max-width: 400px) {
+      button{
+        margin-left: 15px;
       }
     }
   }
@@ -1391,10 +1411,15 @@ footer{
       }
       @media (max-width: 559px){
         width: 100%;
-        height: 100%;
         border-radius: 0;
         padding-top: 100px;
+        h2{
+          font-size: 25px;
+        }
       }
+    }
+    @media (max-width: 559px){
+      width: 100%;     
     }
   }
 }
